@@ -1,0 +1,142 @@
+body{
+    background-color:whitesmoke;
+}
+header{
+    text-align: center;
+    background-color:#d9eed9;
+    padding: 20px ;
+  
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+ 
+}
+ul a {
+    color: #4CAF50;
+    padding: 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+h2{
+   margin-left: 5%;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   font-weight: bold;
+}
+.product-list{
+    display: flex;
+    box-sizing: border-box;
+    padding: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 8%;
+    margin-bottom: 25px;
+    
+}
+.product{
+        background-color: white; /* White background color for the boxes */
+        border: 2px solid white;
+        height: 600px;  
+        width: 400px;
+        padding:10px; 
+        background-color:white;
+        margin: 40px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+}
+.product p{
+    text-align: center;
+    margin-top: 0px ;
+    padding-top: 0px;
+    font-weight: bold;
+
+}
+.product h2{
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: 5px;
+     margin-left: 15%;
+}
+.picture{
+    max-width: 95%;
+    width: 330px;
+    height: 400px;
+    display: block;
+    margin: 7px auto;
+    border-radius: 7px;
+}
+.picture2{
+    max-width: 95%;
+    width: 335px;
+    height: 300px;
+    display: block;
+    margin: 7px auto;
+    border-radius: 7px;
+
+
+}
+.picture3{
+     max-width: 95%;
+    width: 335px;
+    height: 200px;
+    display: block;
+    margin: 7px auto;
+    border-radius: 7px;
+}
+.product .price{
+    
+    font-size: 20px;
+    color: #0cb417;
+    
+}
+footer{
+    text-align: center;
+    background-color:  #124314;
+    padding: 10px;
+    color: white;
+}
+@media (max-width: 1200px)
+ { 
+    .product-list{ 
+        margin-left: 5%; margin-right: 5%; 
+    } 
+ }
+@media (max-width: 992px) {
+     .product { 
+        width: 300px; height: auto; 
+    } 
+}
+@media (max-width: 768px) { 
+    .product-list {
+         flex-direction: column; 
+         align-items: center; 
+    } 
+    .product { 
+        width: 90%; 
+        margin: 20px 0; 
+    } 
+}
+ @media (max-width: 576px) {
+     h2 { 
+        margin-left: 3%; 
+        margin-right: 3%; 
+    } 
+    .product { 
+        width: 100%; 
+        margin: 10px 0; 
+    } 
+   .picture { 
+    width: 100%; 
+    height: auto; 
+   }
+  .picture2, .picture3 {
+     width: 100%; 
+     height: auto; 
+    }
+ }
